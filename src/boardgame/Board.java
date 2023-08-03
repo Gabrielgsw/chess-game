@@ -30,4 +30,10 @@ public class Board {
 	public Piece piece (Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
+	
+	public void placePice(Piece piece, Position position) {
+		// Atribuindo o argumento piece à matriz que define a posicao da peça no tabuleiro
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 }

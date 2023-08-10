@@ -58,7 +58,7 @@ public class Board {
 	
 	// metodo para verificar se há alguma peça na posição passada
 	public boolean thereIsAPiece(Position position) {
-		if (thereIsAPiece(position)) {
+		if (!positionExists(position)) {
 			throw new BoardException("A posição não está no tabuleiro! ");
 		}
 		return piece(position) != null;

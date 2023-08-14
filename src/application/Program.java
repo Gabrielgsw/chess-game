@@ -3,6 +3,7 @@ package application;
 import java.util.Scanner;
 import boardgame.Position;
 import chess.ChessMatch;
+import chess.ChessPiece;
 import chess.ChessPosition;
 import boardgame.Board;
 
